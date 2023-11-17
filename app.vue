@@ -1,5 +1,5 @@
 <template>
   <div>
-    <NuxtWelcome />
+    你好
   </div>
 </template>
