@@ -1,11 +1,11 @@
 <template>
   <div class="about">
     {{ $t('about') }}
+    <NuxtLinkLocale to="/">{{ $t('home') }}</NuxtLinkLocale>
   </div>
 </template>
 
 <script setup lang='ts'>
-import { ref, reactive } from 'vue';
 
 </script>
 

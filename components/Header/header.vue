@@ -31,12 +31,13 @@ const options = [
 
 const { locale } = useI18n()
 
-// 国际化
+// 语言切换跳转页面
 const localeRoute = useLocaleRoute()
 const changeLang = async () => {
+    // 用于把当前页面生成对应的语言前缀的路由,例如:/zh/,/zh/about
     const routePath = localeRoute({ path: route.fullPath, query: { ...route.query } })
     if (routePath) {
-        return navigateTo(routePath.fullPath)
+        return navigateTo(routePath.fullPath)  // 路由跳转
     }
 }
 </script>
