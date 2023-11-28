@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/i18n',
-    '@element-plus/nuxt'
+    '@element-plus/nuxt',
+    'nuxt-icon'
   ],
   i18n: {
     strategy: 'prefix_and_default', // 添加路由前缀的方式
