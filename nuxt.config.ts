@@ -12,4 +12,12 @@ export default defineNuxtConfig({
     defaultLocale: 'en', // 默认语种
     vueI18n: './i18n.config.ts', // 通过vueI18n配置
   },
+  nitro: {
+    // 服务端转发-即部署上后代理
+    routeRules: {
+      '/yob/**': {
+        proxy: 'https://qd.scds.site/**'
+      }
+    }
+  },
 })

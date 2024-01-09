@@ -1,10 +1,22 @@
+<!--
+ * @Author: songhannn
+ * @Date: 2023-11-17 16:16:30
+ * @LastEditors: songhannn
+ * @LastEditTime: 2024-01-03 12:03:29
+ * @FilePath: \nuxt-recording\components\Header\header.vue
+ * @Description: 
+ * 
+-->
 <template>
-    <div class="header">
+    <div class="header" :key="locale">
         <div class="headerBox">
             <img src="/favicon.ico" alt="">
-            <el-select v-model="locale" placeholder="Select" @change="changeLang">
-                <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
-            </el-select>
+            <ClientOnly>
+                <el-select v-model="locale" class="m-2" size="small" popper-class="select-down" :teleported="false"
+                    placeholder="Select" @change="changeLang">
+                    <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value" />
+                </el-select>
+            </ClientOnly>
         </div>
         <hr>
     </div>
