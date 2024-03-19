@@ -14,7 +14,7 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/i18n": "^8.0.0-rc.5",
     "element-plus": "^2.4.2",
-    "nuxt": "^3.8.1",
+    "nuxt": "^3.11.1",
     "nuxt-icon": "^0.6.6",
     "sass": "^1.69.5",
     "vue": "^3.3.8",
