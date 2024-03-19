@@ -2,7 +2,7 @@
  * @Author: songhannn
  * @Date: 2023-11-17 15:03:14
  * @LastEditors: songhannn
- * @LastEditTime: 2023-12-07 10:54:18
+ * @LastEditTime: 2024-03-19 16:34:13
  * @FilePath: \nuxt-recording\pages\index.vue
  * @Description: 
  * 
@@ -11,16 +11,16 @@
     <div class="index">
         {{ $t('home') }}
         <NuxtLinkLocale to="/about">{{ $t('about') }}</NuxtLinkLocale>
-        <Icon name="uil:github" color="black" />
+        <!-- <Icon name="uil:github" color="black" />
         <Icon name="uil:github" />
         <Icon name="🚀" />
-        <Icon name="material-symbols:3g-mobiledata-badge-outline-sharp" size="44" rotate="90deg" />
+        <Icon name="material-symbols:3g-mobiledata-badge-outline-sharp" size="44" rotate="90deg" /> -->
         <br />
-        <hr>
+<!--         <hr>
         {{ count }}
         <br />
         <hr>
-        {{ blog }}
+        {{ blog }} -->
     </div>
 </template>
 

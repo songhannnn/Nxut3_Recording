@@ -2,7 +2,7 @@
  * @Author: songhannn
  * @Date: 2023-11-17 16:16:30
  * @LastEditors: songhannn
- * @LastEditTime: 2024-01-03 12:03:29
+ * @LastEditTime: 2024-03-19 16:35:00
  * @FilePath: \nuxt-recording\components\Header\header.vue
  * @Description: 
  * 
@@ -10,7 +10,7 @@
 <template>
     <div class="header" :key="locale">
         <div class="headerBox">
-            <img src="/favicon.ico" alt="">
+            <NuxtLinkLocale to="/"><img src="/favicon.ico" alt=""></NuxtLinkLocale>
             <ClientOnly>
                 <el-select v-model="locale" class="m-2" size="small" popper-class="select-down" :teleported="false"
                     placeholder="Select" @change="changeLang">
@@ -60,6 +60,10 @@ const changeLang = async () => {
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        .el-select {
+            width: 200px;
+        }
     }
 }
 </style>
